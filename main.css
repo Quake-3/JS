@@ -37,7 +37,7 @@ body {
 	left: 0;
 	height: 40px;
 	width: 40px;
-	background-color: #eee;
+	background-color: #e0e0e0;
 }
 
 .container:hover input ~ .checkmark {
@@ -217,4 +217,8 @@ input[type=range]:focus::-ms-fill-upper {
 	background: #ccc;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 	z-index: 100;
+}
+
+.calc {
+	margin-left: 230px;
 }
