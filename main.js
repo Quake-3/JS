@@ -74,7 +74,7 @@ function closeMenu() {
 		name : "John",
 		greet : greet
 	}
-	console.log(person.greet());
+	//console.log(person.greet());
 
 
 // var avatar = document.getElementById('nav');
@@ -91,5 +91,38 @@ function closeMenu() {
 //   } else {
 // 	avatar.style.position = 'static';
 //   }
-//
+//}
+
+	//счетчик четных чисел
+
+// for (var i = 2; i < 100; i += 2) {
+// 	console.log(i);
 // }
+	//счетчик среднего арифметического
+// var a = [1, 2, 3, 7, 6, 9];
+// var sum = 0;
+// for (var i = 0; i < a.length; i++) {
+// 	sum += arr[i];
+// }
+// var res = sum / a.length;
+// console.log(res);
+
+	//счетчик по нажатию
+
+var res = document.getElementById('num');
+var e = function (event){
+	return res.value++;
+};
+
+var d = function (event){
+	 if(res.value>0){return res.value--};
+};
+
+function func() {
+	var number = +res.value+ +this.value;
+	if (number != 0){
+		res.value = number;
+ 	} else {
+		res.value = 0;
+	}
+}
